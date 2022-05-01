@@ -8,3 +8,5 @@ DNAChron's Y related database, include mutation info from ybrowse.org
 # This project is also hosted at
 - [GitHub](https://github.com/dnachron/dnachronYdb)
 - [Gitee](https://gitee.com/dnachron/dnachronYdb)
+
+[release](../../releases/)

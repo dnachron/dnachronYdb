@@ -26,6 +26,6 @@
 - [https://www.dnachron.cn](https://www.dnachron.cn) 基因志中国站
 
 ## 如何使用
-您可以直接下载原始的[csv文件](/ymutation/)，或者从[release](/releases/)下载生成好的数据库文件。其中csv文件已经做了拆分，单独每个文件均可以用Excel完全打开。
+您可以直接下载原始的[csv文件](/ymutation/)，或者从[release](../../releases/)下载生成好的数据库文件。其中csv文件已经做了拆分，单独每个文件均可以用Excel完全打开。
 
 ## 与ybrowse差异
