@@ -25,7 +25,39 @@
 - [https://www.dnachron.com](https://www.dnachron.com) 基因志国际站
 - [https://www.dnachron.cn](https://www.dnachron.cn) 基因志中国站
 
-## 如何使用
+## 如何下载数据
 您可以直接下载原始的[csv文件](/ymutation/)，或者从[release](../../releases/)下载生成好的数据库文件。其中csv文件已经做了拆分，单独每个文件均可以用Excel完全打开。
 
+我们强烈建议使用git，以实现实时、增量更新。使用git请继续参考后续说明：
+### 环境准备
+*ubuntu*
+```
+sudo apt-get install git sqlite3
+```
+*windows*
+#### 1. 下载安装[git for windows](https://github.com/git-for-windows/git/releases)
+会同步安装git-bash。后续命令，均需在git-bash中执行。
+#### 2. 下载windows版[sqlite3](https://www.sqlite.org/download.html)
+请下载sqlite-tools-win32-x86-*文件。\
+解压后，得到sqlite3.exe。把其所在路径加到系统环境变量PATH中，或者直接拷贝到git安装目录下的执行文件目录，一般是C:\Program Files\Git\mingw64\bin\
+### 克隆
+*github*
+```
+git clone https://github.com/dnachron/dnachronYdb.git
+```
+*gitee*
+```
+git clone https://gitee.com/dnachron/dnachronYdb.git
+```
+### 更新及生成数据库
+```
+cd ./dnachronYdb
+./build.sh
+```
+每次执行，会自动更新数据到最新版，并生成数据库。
+
+## 如何浏览数据库
+可以使用数据库管理工具查看、搜索、筛选数据。如 [SQLiteStudio](https://sqlitestudio.pl/) [DBeaver](https://dbeaver.io/)
+
+![alt text](resources/SQLiteStudio.jpg?raw=true)
 ## 与ybrowse差异
