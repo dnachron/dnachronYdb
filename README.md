@@ -26,6 +26,9 @@ Welcome to visit our website.
 - <https://www.dnachron.com> DNAChron International
 - <https://www.dnachron.cn> DNAChron China
 
+## Data structure
+The data in repo is the raw data we collated in CSV format. You can generate sqlite3 database file through the script provided by us. If you have your own database, you can also import data directly from CSV files into your own database.
+
 ## How to download data
 You can download the raw [csv file](/ymutation/) directly，or download prebuild database file from [release](../../releases/). The csv file has been splited, each one can be wholy opened by Excel.
 
