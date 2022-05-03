@@ -80,4 +80,5 @@ If conflicts are found, try to manually select reasonable results, or select acc
     - There may be some mutations with different original position, ref and alt, which are found to be the same mutation after standardization.
     - Because the indel mutation description in the original data is not standard, one description may refer to different mutation. We need to check whether the mutation matches the reference sequence to verify the description. If it cannot match to the reference sequence, add it to the list of wrong mutations.
     - For indel mutations contained in the reference sequence itself, reverse check the reference sequence.
+    - For MNP and complex, all are added to the error mutation list because can't be verified. We mark MNP and complex as multiple SNPs or INDELs.
 7. For program compatibility of DNAChron website, a fake mutation is added: Root, 0, G, C. Just ignore it.
