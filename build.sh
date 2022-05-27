@@ -7,7 +7,11 @@ cd "${0%/*}" || exit 1
 git pull -f
 
 # generate databse
-rm dnachronYdb.sqlite3 -f
+if ! rm dnachronYdb.sqlite3 -f; then
+    echo "can't remove dnachronYdb.sqlite3"
+    exit 1
+fi
+
 sqlite3 dnachronYdb.sqlite3 'CREATE TABLE ymutation (
         id               INTEGER            NOT NULL
                                             PRIMARY KEY AUTOINCREMENT,
