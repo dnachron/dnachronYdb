@@ -8,7 +8,6 @@ git pull -f
 
 # generate databse
 if ! rm dnachronYdb.sqlite3 -f; then
-    echo "can't remove dnachronYdb.sqlite3"
     exit 1
 fi
 
