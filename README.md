@@ -1,3 +1,4 @@
+<mark>This is old hg38 mutations and is archived, lease move to [https://github.com/dnachron/ymutations](https://github.com/dnachron/ymutations) for T2T y mutations.</mark>
 # dnachronYdb
 DNAChron's Y related database, include mutation info from [ybrowse.org](https://ybrowse.org/)
 
